@@ -1,0 +1,19 @@
+{
+  "name": "Usuarios",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "usuarios": {
+      "type": "hasMany",
+      "model": "cupones",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

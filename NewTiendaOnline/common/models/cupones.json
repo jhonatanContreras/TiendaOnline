@@ -1,0 +1,55 @@
+{
+  "name": "cupones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Codigo": {
+      "type": "string",
+      "required": true
+    },
+    "Descuento": {
+      "type": "number",
+      "required": true
+    },
+    "FechaI": {
+      "type": "date",
+      "required": true
+    },
+    "FechaF": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usuarios": {
+      "type": "belongsTo",
+      "model": "Usuarios",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

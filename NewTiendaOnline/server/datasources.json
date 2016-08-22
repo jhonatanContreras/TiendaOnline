@@ -1,0 +1,21 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Coupons": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "Descuento",
+    "name": "Coupons",
+    "connector": "mongodb"
+  },
+  "Usuarios": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "Usuarios",
+    "password": "",
+    "name": "Usuarios",
+    "connector": "mongodb"
+  }
+}
